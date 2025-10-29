@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="cyberversicherung-finden.de - Find and compare cyber insurance solutions tailored to your business needs. Protect your company with comprehensive cyber liability coverage.">
+    <meta name="keywords" content="cyber insurance, cyberversicherung, insurance comparison, cyber liability, business protection">
+    <meta name="author" content="cyberversicherung-finden.de">
+    <meta property="og:title" content="cyberversicherung-finden.de - Compare Cyber Insurance">
+    <meta property="og:description" content="Find and compare the best cyber insurance solutions for your business.">
+    <meta property="og:type" content="website">
+    <title>cyberversicherung-finden.de - Compare Cyber Insurance Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .gradient-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: all 0.3s ease;
+        }
+
+        .gradient-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(102, 126, 234, 0.4);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .glow-effect {
+            box-shadow: 0 0 30px rgba(102, 126, 234, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-white text-lg"></i>
+                    </div>
+                    <span class="text-xl font-bold hidden sm:inline">cyberversicherung</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About</a>
+                    <a href="mailto:thomas.dewein@gmail.com" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <a href="https://cyberversicherung-finden.de" target="_blank" class="hidden md:inline-block gradient-button text-white px-6 py-2 rounded-lg font-semibold">
+                    Get Started
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden mobile-menu-button p-2 rounded-lg hover:bg-gray-800 transition-colors duration-300">
+                    <i class="fas fa-bars text-white text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="mobile-menu hidden md:hidden pb-4 space-y-2">
+                <a href="#features" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-800 rounded-lg transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-800 rounded-lg transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-800 rounded-lg transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-800 rounded-lg transition-colors duration-300">About</a>
+                <a href="mailto:thomas.dewein@gmail.com" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-800 rounded-lg transition-colors duration-300">Contact</a>
+                <a href="https://cyberversicherung-finden.de" target="_blank" class="block gradient-button text-white px-4 py-2 rounded-lg font-semibold text-center mt-4">
+                    Get Started
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 pt-20 pb-20">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 floating"></div>
+            <div class="absolute top-40 right-10 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 floating" style="animation-delay: 2s;"></div>
+            <div class="absolute -bottom-8 left-20 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 floating" style="animation-delay: 4s;"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-8">
+                <span class="inline-block px-4 py-2 bg-purple-900 bg-opacity-50 border border-purple-500 border-opacity-50 rounded-full text-purple-300 text-sm font-semibold">
+                    <i class="fas fa-star mr-2"></i>Your Cyber Insurance Solution
+                </span>
+            </div>
+
+            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+                Find Your Perfect
+                <span class="gradient-text"> Cyber Insurance</span>
+            </h1>
+
+            <p class="text-xl sm:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
+                Compare comprehensive cyber insurance policies from top-rated providers. Protect your business from cyber threats with coverage tailored to your specific needs and risk profile.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <a href="https://cyberversicherung-finden.de" target="_blank" class="gradient-button text-white px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center justify-center">
+                    <i class="fas fa-arrow-right mr-2"></i>Start Comparing Now
+                </a>
+                <button class="px-8 py-4 rounded-lg font-bold text-lg border-2 border-purple-500 text-purple-300 hover:bg-purple-500 hover:bg-opacity-10 transition-all duration-300">
+                    <i class="fas fa-play mr-2"></i>Watch Demo
+                </button>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-16 pt-16 border-t border-gray-700">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-purple-400 mb-2">500+</div>
+                    <p class="text-gray-400">Insurance Plans</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-purple-400 mb-2">50K+</div>
+                    <p class="text-gray-400">Businesses Protected</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-purple-400 mb-2">98%</div>
+                    <p class="text-gray-400">Customer Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-gray-800 bg-opacity-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    Powerful Features for <span class="gradient-text">Complete Protection</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Discover comprehensive cyber insurance comparison tools designed to help you find the perfect coverage for your business.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="card-hover bg-gray-900 border border-gray-700 rounded-xl p-8 hover:border-purple-500 hover:border-opacity-50">
+                    <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-search text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Advanced Search</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Intelligent search and filtering capabilities to quickly find cyber insurance plans that match your specific business requirements and coverage needs.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Real-time policy filtering</li>
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Custom search parameters</li>
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Instant results</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="card-hover bg-gray-900 border border-gray-700 rounded-xl p-8 hover:border-purple-500 hover:border-opacity-50">
+                    <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-bar text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Comparison Tools</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Side-by-side comparison of multiple cyber insurance policies with detailed breakdowns of coverage, deductibles, and premium costs.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Coverage comparison</li>
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Price analysis</li>
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Feature highlights</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="card-hover bg-gray-900 border border-gray-700 rounded-xl p-8 hover:border-purple-500 hover:border-opacity-50">
+                    <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Expert Guidance</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Access to cyber insurance experts who provide personalized recommendations based on your industry, company size, and specific risk profile.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Professional consultations</li>
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Risk assessments</li>
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Personalized advice</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="card-hover bg-gray-900 border border-gray-700 rounded-xl p-8 hover:border-purple-500 hover:border-opacity-50">
+                    <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-zap text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Instant Quotes</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Get instant, no-obligation quotes from multiple insurance providers in seconds. Compare pricing and coverage options without any hassle.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Quick quote generation</li>
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>No commitment required</li>
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Transparent pricing</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="card-hover bg-gray-900 border border-gray-700 rounded-xl p-8 hover:border-purple-500 hover:border-opacity-50">
+                    <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-lock text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Secure Platform</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Enterprise-grade security with encrypted data transmission and secure storage of your sensitive business information throughout the comparison process.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Data encryption</li>
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Privacy protection</li>
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Secure transactions</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="card-hover bg-gray-900 border border-gray-700 rounded-xl p-8 hover:border-purple-500 hover:border-opacity-50">
+                    <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-headset text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">24/7 Support</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Round-the-clock customer support team ready to answer your questions about cyber insurance coverage, policies, and claims.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Round-the-clock assistance</li>
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Multiple contact channels</li>
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Quick response times</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    Why Choose <span class="gradient-text">cyberversicherung-finden.de</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Experience the benefits of a comprehensive cyber insurance comparison platform built for modern businesses.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <!-- Benefit 1 -->
+                    <div class="flex gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-br from-purple-500 to-pink-500">
+                                <i class="fas fa-check text-white text-lg"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Save Time & Money</h3>
+                            <p class="text-gray-400">
+                                Compare hundreds of cyber insurance policies in minutes instead of weeks. Find the best coverage at the most competitive rates without endless research or phone calls.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Benefit 2 -->
+                    <div class="flex gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-br from-purple-500 to-pink-500">
+                                <i class="fas fa-check text-white text-lg"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Comprehensive Coverage Analysis</h3>
+                            <p class="text-gray-400">
+                                Understand exactly what each policy covers, from data breach response to business interruption, ransomware protection, and liability coverage tailored to your needs.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Benefit 3 -->
+                    <div class="flex gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-br from-purple-500 to-pink-500">
+                                <i class="fas fa-check text-white text-lg"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Risk Assessment Tools</h3>
+                            <p class="text-gray-400">
+                                Evaluate your cybersecurity posture with our advanced risk assessment tools. Identify vulnerabilities and get personalized insurance recommendations based on your specific threats.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Benefit 4 -->
+                    <div class="flex gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-br from-purple-500 to-pink-500">
+                                <i class="fas fa-check text-white text-lg"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Trusted Providers Only</h3>
+                            <p class="text-gray-400">
+                                We partner exclusively with top-rated, financially stable insurance companies with proven track records in cyber liability and data breach coverage.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Benefit 5 -->
+                    <div class="flex gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-br from-purple-500 to-pink-500">
+                                <i class="fas fa-check text-white text-lg"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Personalized Recommendations</h3>
+                            <p class="text-gray-400">
+                                Receive expert-backed recommendations tailored to your industry, company size, revenue, and specific cyber risk profile to ensure optimal coverage.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80" alt="Cyber Security Protection" class="rounded-xl shadow-2xl w-full h-auto">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent rounded-xl"></div>
+                    <div class="absolute bottom-8 left-8 right-8 bg-gray-900 bg-opacity-80 backdrop-blur-md rounded-lg p-6 border border-purple-500 border-opacity-30">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-shield-alt text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">Average savings</p>
+                                <p class="text-2xl font-bold">35% per year</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80');"></div>
+        <div class="absolute inset-0 bg-gray-900 bg-opacity-85"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                Ready to Find Your Perfect Cyber Insurance?
+            </h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Join thousands of businesses already protecting themselves with the right cyber insurance coverage. Get personalized quotes from top providers in minutes.
+            </p>
+            <a href="https://cyberversicherung-finden.de" target="_blank" class="gradient-button text-white px-10 py-4 rounded-lg font-bold text-lg inline-flex items-center justify-center">
+                <i class="fas fa-arrow-right mr-2"></i>Compare Insurance Plans Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-gray-800 bg-opacity-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    Trusted by <span class="gradient-text">Thousands of Businesses</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    See what our customers have to say about their experience with cyberversicherung-finden.de
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="card-hover bg-gray-900 border border-gray-700 rounded-xl p-8 hover:border-purple-500 hover:border-opacity-50">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        "cyberversicherung-finden.de made it incredibly easy to find the right cyber insurance for our growing tech startup. We saved over €3,000 per year compared to our previous policy. The comparison tools are intuitive and the expert guidance was invaluable in understanding our coverage options."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold">Sarah Mueller</p>
+                            <p class="text-sm text-gray-400">CEO, TechStart GmbH</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="card-hover bg-gray-900 border border-gray-700 rounded-xl p-8 hover:border-purple-500 hover:border-opacity-50">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        "As a mid-sized e-commerce company, we were worried about cyber threats. This platform helped us find comprehensive coverage that includes ransomware protection and business interruption insurance. The customer support team answered all our questions professionally."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold">Marcus Weber</p>
+                            <p class="text-sm text-gray-400">Operations Director, eShop Solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="card-hover bg-gray-900 border border-gray-700 rounded-xl p-8 hover:border-purple-500 hover:border-opacity-50">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        "The risk assessment tools provided valuable insights into our cybersecurity posture. We were able to identify gaps in our current coverage and upgrade to a policy that better protects our customer data. Highly recommended for any business serious about cyber protection."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold">Dr. Elena Richter</p>
+                            <p class="text-sm text-gray-400">IT Manager, Finance Consulting AG</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="card-hover bg-gray-900 border border-gray-700 rounded-xl p-8 hover:border-purple-500 hover:border-opacity-50">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        "We compared over 50 different policies using this platform and found the perfect fit for our manufacturing company. The transparent pricing and detailed coverage information made our decision-making process straightforward. Best investment for our cyber security strategy."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold">Klaus Hoffmann</p>
+                            <p class="text-sm text-gray-400">Risk Manager, Precision Manufacturing Ltd</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    About <span class="gradient-text">cyberversicherung-finden.de</span>
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        Founded in 2018, cyberversicherung-finden.de was born from a simple observation: finding the right cyber insurance was unnecessarily complicated and time-consuming for businesses of all sizes. Our founding team, comprised of cybersecurity experts, insurance professionals, and technology innovators, recognized that companies needed a transparent, user-friendly platform to navigate the complex landscape of cyber liability insurance. What started as a mission to simplify insurance comparison has grown into Germany's leading cyber insurance comparison platform, serving thousands of businesses annually.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Today, we remain committed to our core mission: empowering businesses to make informed decisions about their cyber insurance coverage. We believe that comprehensive cyber protection should be accessible and affordable for companies of every size, from small startups to large enterprises. Our platform combines cutting-edge technology with human expertise to deliver personalized recommendations that truly match each business's unique risk profile and insurance needs.
+                    </p>
+                </div>
+
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80" alt="Our Team" class="rounded-xl shadow-2xl w-full h-auto">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent rounded-xl"></div>
+                </div>
+            </div>
+
+            <!-- Core Values -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 pt-16 border-t border-gray-700">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lightbulb text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Innovation</h3>
+                    <p class="text-gray-400">
+                        We continuously improve our platform with the latest technology and industry insights to provide the best comparison experience.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Transparency</h3>
+                    <p class="text-gray-400">
+                        We believe in honest, clear communication about insurance policies, pricing, and coverage to help you make confident decisions.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Customer Focus</h3>
+                    <p class="text-gray-400">
+                        Your success is our success. We're dedicated to providing exceptional support and guidance throughout your insurance journey.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-purple-900 to-pink-900 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Don't Leave Your Business Unprotected
+            </h2>
+            <p class="text-lg text-gray-200 mb-8 max-w-2xl mx-auto">
+                Get personalized cyber insurance recommendations and start comparing policies today. Your business deserves comprehensive protection.
+            </p>
+            <a href="https://cyberversicherung-finden.de" target="_blank" class="inline-block bg-white text-purple-900 px-10 py-4 rounded-lg font-bold text-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                <i class="fas fa-shield-alt mr-2"></i>Start Your Free Comparison
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-shield-alt text-white"></i>
+                        </div>
+                        <span class="text-lg font-bold">cyberversicherung</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Your trusted platform for comparing cyber insurance solutions and finding the perfect coverage for your business.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Resources</h4>
+                    <ul class="space-y-3">
+                        <li><a href="blog.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Blog</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="mailto:thomas.dewein@gmail.com" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-sm text-gray-400 mb-1">Email</p>
+                            <a href="mailto:thomas.dewein@gmail.com" class="text-purple-400 hover:text-purple-300 transition-colors duration-300">
+                                thomas.dewein@gmail.com
+                            </a>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400 mb-1">Website</p>
+                            <a href="https://cyberversicherung-finden.de" target="_blank" class="text-purple-400 hover:text-purple-300 transition-colors duration-300">
+                                cyberversicherung-finden.de
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                        &copy; 2025 cyberversicherung-finden.de. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="privacy.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">Privacy Policy</a>
+                        <a href="terms.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">Terms of Service</a>
+                        <a href="blog.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
